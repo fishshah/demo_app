@@ -22,10 +22,18 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'rb-readline'
+
 gem 'jquery-rails'
 
 group :production do
 gem 'pg', '0.12.2'
+end
+
+
+group :test do
+  gem 'therubyracer', :platform => :mri
+  gem 'therubyrhino', ">=1.73.3", :platform => :jruby
 end
 
 # To use ActiveModel has_secure_password
